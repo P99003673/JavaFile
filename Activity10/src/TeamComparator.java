@@ -5,11 +5,11 @@ import java.util.Comparator;
 	{
 
 		@Override
-		public int compare(Team o1, Team o2) {
-			if(o1.numberOfMatches == o2.numberOfMatches)  
+		public int compare(Team t1, Team t2) {
+			if(t1.numberOfMatches == t2.numberOfMatches)  
 				return 0;  
 			
-				else if(o1.numberOfMatches > o2.numberOfMatches)  
+				else if(t1.numberOfMatches > t2.numberOfMatches)  
 				return 1;  
 				
 				else  
