@@ -24,20 +24,20 @@ public class Main
 		System.out.println("Enter the Scores: ");
 		String score2 = sc.next();
 		
-		SortScores obj = new SortScores(match,score);
-		SortScores obj1 = new SortScores(match1,score1);
-		SortScores obj2 = new SortScores(match2,score2);
+		SortScores scr = new SortScores(match,score);
+		SortScores scr1 = new SortScores(match1,score1);
+		SortScores scr2 = new SortScores(match2,score2);
 		try
 		{
-		Thread th = new Thread(obj);
-		obj.start();
-		obj.join();
-		Thread th1 = new Thread(obj1);
-		obj1.start();
-		obj1.join();
-		Thread th2 = new Thread(obj2);
-		obj2.start();
-		obj2.join();
+		Thread th = new Thread(scr);
+		scr.start();
+		scr.join();
+		Thread th1 = new Thread(scr1);
+		scr1.start();
+		scr1.join();
+		Thread th2 = new Thread(scr2);
+		scr2.start();
+		scr2.join();
 		}
 		catch(InterruptedException e)
 		{
