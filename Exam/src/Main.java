@@ -48,12 +48,12 @@ public class Main {
 		Player o = new Player(ps11,date1,ps33,ps44,ps55,ps66,ps77,ps88);
 		System.out.println("Player 2 \n" + o + "\n");
 		
-		 Complex com1 = new Complex(ps1, ps3, ps7);
-	      Complex com2 = new Complex(ps11, ps33, ps77);
+		 Comp comp1 = new Comp(ps1, ps3, ps7);
+	      Comp comp2 = new Comp(ps11, ps33, ps77);
 	     
-	      boolean bool = com1.equals(com2);
+	      boolean bl = comp1.equals(comp2);
 
-	      if(bool)
+	      if(bl)
 	      {
 	    	  System.out.println("Player One is same as player two");
 	      }
@@ -61,20 +61,7 @@ public class Main {
 	      {
 	    	  System.out.println("Player One and player 2 are different");
 	      }
-		
-//		
-//		if(ps1.equals(ps11)&& ps3.equals(ps33)&&ps7.equals(ps77)) {
-//			p.toString();
-//			o.toString();
-//			System.out.println("same");
-//		}
-//		else if(ps1.equals(ps11)&& ps3.equals(ps33)&&ps7.equals(ps77)) {
-//			p.toString();
-//			o.toString();
-//			System.out.println("not");
-//		}
-//		
-//	}
+
 
 		
 	}
