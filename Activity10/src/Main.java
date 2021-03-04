@@ -11,11 +11,11 @@ public class Main {
     
 		
 		Scanner sc=new Scanner(System.in);
-		ArrayList<Player> al=new ArrayList<Player>();
+		ArrayList<Player> all=new ArrayList<Player>();
 		
 	System.out.println("Please provide the number of players to be registered");
-	int n=sc.nextInt();
-	for(int i=0;i<n;i++)
+	int num=sc.nextInt();
+	for(int i=0;i<num;i++)
 	{
 		System.out.println("Enter the name of the player ");
 		String name=sc.next();
@@ -38,10 +38,10 @@ public class Main {
 		}
 		
 		
-		al.add(new Player(name,skill));
+		all.add(new Player(name,skill));
 	}
-	Collections.sort(al,new PlayerComparator());  
-	for(Player s:al)
+	Collections.sort(all,new PlayerComparator());  
+	for(Player s:all)
 	{
 		System.out.println(s);
 	}
