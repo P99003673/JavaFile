@@ -8,11 +8,11 @@ import java.util.Scanner;
 public class TeamMain {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		ArrayList<Team> al=new ArrayList<Team>();
+		ArrayList<Team> all=new ArrayList<Team>();
 		
 	System.out.println("Enter no of teams");
-	int n=sc.nextInt();
-	for(int i=0;i<n;i++)
+	int num=sc.nextInt();
+	for(int i=0;i<num;i++)
 	{
 		System.out.println("Enter Team "+(i+1)+ " details");
 		System.out.println("Enter Name");
@@ -20,11 +20,11 @@ public class TeamMain {
 		System.out.println("Enter Team no of matches");
 		int no=sc.nextInt();
 			
-		al.add(new Team(name, no));
+		all.add(new Team(name, no));
 	}
 	
-	Collections.sort(al,new TeamComparator());  
-	for(Team s:al)
+	Collections.sort(all,new TeamComparator());  
+	for(Team s:all)
 	{
 		System.out.println(s);
 	}
