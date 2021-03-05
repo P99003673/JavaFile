@@ -34,16 +34,7 @@ public class Main {
 				String [] arr = a.split("\\,");
 				c.setName(arr[0]);
 					
-//				
-//				DateFormat df = new SimpleDateFormat(arr[1]); 
-//				  
-//		        // Get the date using calendar object 
-//		        Date today = Calendar.getInstance() 
-//		                         .getTime(); 
-		  
-		        // Convert the date into a 
-		        // string using format() method 
-//		        String dateToString = df.format(today);
+
 				DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d-MM-yyyy");
 				LocalDate date = LocalDate.parse(arr[1], formatter);
 				
